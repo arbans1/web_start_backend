@@ -1,9 +1,9 @@
 """
-ASGI config for web_start project.
+Web_Start 프로젝트에 대한 ASGI 구성.
 
-It exposes the ASGI callable as a module-level variable named ``application``.
+``Application``이라는 이름의 모듈 레벨 변수로 ASGI 호출을 노출시킵니다.
 
-For more information on this file, see
+이 파일에 대한 자세한 내용은 참조하십시오
 https://docs.djangoproject.com/en/4.1/howto/deployment/asgi/
 """
 
