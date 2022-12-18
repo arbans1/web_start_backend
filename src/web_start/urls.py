@@ -21,5 +21,5 @@ urlpatterns = [
     path(route='admin/', view=admin.site.urls),
 
     # 사용자 설정
-    path(route='blog', view=include('blog.urls')),
+    path(route='blog/', view=include('blog.urls'), name='blog'),
 ]
