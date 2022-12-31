@@ -28,4 +28,4 @@ class Post(models.Model):
         """
         Post 객체의 상세 페이지로 이동할 수 있는 URL을 반환합니다.
         """
-        return f"/blog/{self.pk}/"
+        return reverse("single_post_page", args=[self.pk])

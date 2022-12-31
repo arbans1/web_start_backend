@@ -22,4 +22,7 @@ urlpatterns = [
 
     # 사용자 설정
     path(route='blog/', view=include('blog.urls'), name='blog'),
+
+    # single_page 추가
+    path(route='', view=include('single_pages.urls'), name='single_pages'),
 ]
