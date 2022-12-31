@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.views.generic import ListView
+# from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 from .models import Post
 
 
@@ -14,6 +14,12 @@ class PostList(ListView):
     # template_name = 'blog/index.html'
     # default template_name = 'blog/post_list.html'
 
+class PostDetail(DetailView):
+    """
+    DetailView는 하나의 객체를 보여줍니다.
+    """
+    model = Post
+    
 
 '''
 def index(request):
@@ -29,7 +35,7 @@ def index(request):
     # render 함수의 두 번째 인수로 context를 전달합니다.
     return render(request=request, template_name="blog/index.html", context={"posts": posts})
 '''
-
+'''
 def single_post_page(request, pk):
     """
     single_post 페이지를 보여줍니다.
@@ -40,3 +46,4 @@ def single_post_page(request, pk):
 
     # render 함수의 두 번째 인수로 context를 전달합니다.
     return render(request=request, template_name="blog/single_post_page.html", context={"post": post})
+'''
